@@ -1,0 +1,206 @@
+body {
+  background-color:black;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+div {
+  border-style: solid;
+  border-color: yellow;
+  border-width: 1px;
+}
+
+p {
+	font-family: "Avenir Next";
+	font-size: 10pt;
+	color: white;
+}
+
+p.chapter-head {
+	font-size: 24pt;
+}
+
+p.caption {
+  font-family: "Avenir Next Condensed";
+}
+
+p.equation {
+	font-size: 20px;
+  margin: 10px;
+}
+
+img.inline-image {
+  margin: 10px 0px 10px 10px;
+}
+
+img.image-float-left {
+  padding: 10px;
+  float: left;
+}
+
+img.image-float-right {
+  margin: 10px 0px 10px 10px;
+  float: right;
+}
+
+
+.centered {
+	display: flex;
+	justify-content: center;
+
+  text-align: center;
+}
+
+.spacerh {
+  width: 60%;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+  width: 70%;
+}
+
+div.bodytext {
+  width: 85%;
+}
+
+div.captioned-image {
+  clear: both;
+  overflow: hidden;
+}
+
+.autoflex {
+  flex: auto <width>;
+}
+
+.noflex {
+  flex: none;
+}
+
+.standout {
+  
+  border-style: solid;
+  border-color: yellow;
+  border-width: 1px;
+  background-color: blue;
+}
+
+.autoflex-width {
+  flex: auto <width>;
+}
+
+@media screen and (min-width: 600px){
+
+  div.smart-flex {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 600px){
+  
+    div.smart-flex {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.noflex-width {
+  flex: none <width>;
+}
+
+img.constrained {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+
+.equation-images-row {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.equation-row {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.equation-captions-row {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+.equation-item {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 60px;
+  text-align: center;
+
+/*
+  border-style: solid;
+  border-color: yellow;
+  border-width: 1px;
+  background-color: blue;
+*/ 
+}
+
+.table-row {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: space-between;
+}
+
+.table-col {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  max-width: 18%;
+}
+
+p.table-cell {
+  margin: 10px;
+
+  width: 80px;
+}
+
+p.table-header-cell {
+  font-size: 12pt;
+  margin: 10px;
+  word-wrap: break-word;
+
+  width: 80px;
+}
+
